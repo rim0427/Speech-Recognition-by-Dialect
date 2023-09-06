@@ -547,33 +547,6 @@ plt.ylabel('True')
 plt.title('Confusion Matrix')
 plt.savefig('result_cnn.png')
 
-# #DNN
-# import keras
-# from keras import layers
-# drop_rate = 0.3
-# model = Sequential()
-# model.add(Dense(3, activation = 'softmax', input_shape = (X_train_flat.shape[1],)))
-# model.add(tf.keras.layers.Dropout(drop_rate))
-# model.add(layers.Dense(units=256, activation="relu"))
-# model.add(tf.keras.layers.Dropout(drop_rate))
-# model.add(layers.Dense(units=256, activation="relu"))
-# model.add(tf.keras.layers.Dropout(drop_rate))
-# model.add(layers.Dense(units=128, activation="relu"))
-# model.add(tf.keras.layers.Dropout(drop_rate))
-# model.add(layers.Dense(units=128, activation="relu"))
-# model.add(tf.keras.layers.Dropout(drop_rate))
-# model.add(layers.Dense(units=3))
-# model.summary()
-# model.compile(loss='categorical_crossentropy',
-#                optimizer='adam',
-#               metrics=['accuracy'])
-# train_X_ex_flat = np.array([features_2d.flatten() for features_2d in train_X_ex])
-# test_X_ex_flat = np.array([features_2d.flatten() for features_2d in test_X_ex])
-#
-# history = model.fit(np.array(train_X_ex_flat),np.array(train_y_cat),epochs=100, batch_size=4,verbose=1,validation_data=(np.array(test_X_ex_flat), np.array(test_y_cat)))
-# _,acc = model.evaluate(test_X_ex_flat,test_y_cat,batch_size=64,verbose=1)
-# print('loss:',_,'acc:',acc)
-
 #LSTM
 # from keras.layers import Dense, LSTM
 #
